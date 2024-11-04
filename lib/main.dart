@@ -1,8 +1,43 @@
-import 'package:flutter/material.dart';
 import 'package:travel_app/pages/navpages/main_page.dart';
+import 'package:device_preview_screenshot/device_preview_screenshot.dart';
+import 'package:flutter/material.dart';
 
-void main() {
-  runApp(const MyApp());
+Future<void> main() async {
+  runApp(
+    DevicePreview(
+      backgroundColor: Colors.white,
+      tools: const [
+        DeviceSection(
+          frameVisibility: false,
+          orientation: false,
+        ),
+        SystemSection(
+          locale: false,
+          theme: true,
+        ),
+        DevicePreviewScreenshot(),
+        SettingsSection(),
+      ],
+      devices: [
+        Devices.android.samsungGalaxyA50,
+        Devices.android.samsungGalaxyNote20,
+        Devices.android.samsungGalaxyS20,
+        Devices.android.samsungGalaxyNote20Ultra,
+        Devices.android.onePlus8Pro,
+        Devices.android.sonyXperia1II,
+        Devices.ios.iPhoneSE,
+        Devices.ios.iPhone12,
+        Devices.ios.iPhone12Mini,
+        Devices.ios.iPhone12ProMax,
+        Devices.ios.iPhone13,
+        Devices.ios.iPhone13ProMax,
+        Devices.ios.iPhone13Mini,
+        Devices.ios.iPhoneSE,
+      ],
+      enabled: true,
+      builder: (context) => const MyApp(),
+    ),
+  );
 }
 
 class MyApp extends StatelessWidget {
@@ -12,10 +47,12 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       title: 'Travel App',
-      debugShowCheckedModeBanner: false,
       theme: ThemeData(
         primarySwatch: Colors.blue,
       ),
+      debugShowCheckedModeBanner: false,
+      locale: DevicePreview.locale(context),
+      builder: DevicePreview.appBuilder,
       home: const MainPage(),
     );
   }
