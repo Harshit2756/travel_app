@@ -49,7 +49,7 @@ jobs:
           Future<void> main() async {
             runApp(
               DevicePreview(
-                backgroundColor: backgroundColor,
+                backgroundColor: Colors.white,
                 tools: const [
                   DeviceSection(
                     frameVisibility: false,
