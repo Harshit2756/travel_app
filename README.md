@@ -14,10 +14,10 @@
 <h1 align="center">🚀 Project Name</h1>
 
 <p align="center">
-  <img alt="GitHub top language" src="https://img.shields.io/github/languages/top/Harshit2756/YOUR_PROJECT_NAME">
-  <img alt="GitHub language count" src="https://img.shields.io/github/languages/count/Harshit2756/YOUR_PROJECT_NAME">
-  <img alt="Repository size" src="https://img.shields.io/github/repo-size/Harshit2756/YOUR_PROJECT_NAME">
-  <img alt="License" src="https://img.shields.io/github/license/Harshit2756/YOUR_PROJECT_NAME">
+  <img alt="GitHub top language" src="https://img.shields.io/github/languages/top/Harshit2756/flutter_travel_app">
+  <img alt="GitHub language count" src="https://img.shields.io/github/languages/count/Harshit2756/flutter_travel_app">
+  <img alt="Repository size" src="https://img.shields.io/github/repo-size/Harshit2756/flutter_travel_app">
+  <img alt="License" src="https://img.shields.io/github/license/Harshit2756/flutter_travel_app">
 </p>
 
 ---
@@ -101,13 +101,13 @@ To run this project locally, ensure you have [required tools/environment] instal
 1. **Clone the repository**:
 
     ```bash
-    git clone https://github.com/Harshit2756/YOUR_PROJECT_NAME.git
+    git clone https://github.com/Harshit2756/flutter_travel_app.git
     ```
 
 2. **Navigate to the project directory**:
 
     ```bash
-    cd YOUR_PROJECT_NAME
+    cd flutter_travel_app
     ```
 
 3. **Install the dependencies**:
