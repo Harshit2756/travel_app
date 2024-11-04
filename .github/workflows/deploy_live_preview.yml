@@ -104,7 +104,7 @@ jobs:
           EOL
 
       - name: Build Web
-        run: flutter build web --base-href "/flutter_chess/"
+        run: flutter build web --base-href "/flutter_travel_app/"
 
       - name: Update docs directory
         run: |
